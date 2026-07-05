@@ -1,6 +1,15 @@
 {
   "name": "gsprite",
-  "private": true,
+  "version": "1.0.1",
+  "type": "module",
+  "bin": {
+    "gsprite": "./ase-cli.ts"
+  },
+  "main": "ase-builder.ts",
+  "files": [
+    "ase-cli.ts",
+    "ase-builder.ts"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
   },

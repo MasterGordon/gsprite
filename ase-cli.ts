@@ -1,3 +1,4 @@
+#!/usr/bin/env bun
 import { parseArgs } from "util";
 import sharp from "sharp";
 import { AsepriteBuilder, type BuilderFrame } from "./ase-builder";
@@ -238,8 +239,8 @@ if (values.sheet) {
   await merge(outputFile, pngFiles);
 } else {
   console.log(`Usage:
-  bun ase-cli.ts --merge -o output.aseprite *.png
-  bun ase-cli.ts --sheet sprite.png --tags jump,jump,idle,idle,run,run
+  gsprite --merge -o output.aseprite *.png
+  gsprite --sheet sprite.png --tags jump,jump,idle,idle,run,run
 
 Options:
   --merge, -m       Merge multiple PNG files into a single Aseprite file
